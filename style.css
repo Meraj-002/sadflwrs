@@ -21,7 +21,7 @@ body {
     color: rgba(255, 216, 95, 0.3);
     pointer-events: none;
     z-index: 0;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
   }
   
   .name-animation .name-text {
