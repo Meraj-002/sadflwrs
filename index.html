@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For uhh 🥀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #startScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #000000cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #startButton {
+            padding: 20px 40px;
+            font-size: 2em;
+            border: none;
+            border-radius: 10px;
+            background-color: #ffadad;
+            color: white;
+            font-family: 'Pacifico', cursive;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            transition: background 0.3s;
+        }
+
+        #startButton:hover {
+            background-color: #ff7676;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="startScreen">
+        <button id="startButton">Start</button>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="name-animation" id="animatedName">
+        <div class="name-text" id="nameText"></div>
+        <div class="shayari-text" id="shayariText"></div>
+    </div>
+
+    <div class="ground">
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+        <div class="flower-container"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        const startButton = document.getElementById('startButton');
+        const startScreen = document.getElementById('startScreen');
+        const bgMusic = document.getElementById('bgMusic');
+
+        startButton.addEventListener('click', () => {
+            startScreen.style.display = 'none';
+            bgMusic.play();
+        });
+    </script>
+</body>
+
+</html>
