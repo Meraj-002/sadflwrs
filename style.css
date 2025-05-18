@@ -31,7 +31,8 @@ body {
   .name-animation .shayari-text {
     font-size: 2.0vw;
     margin-top: 1em;
-    line-height: 1.0;
+    line-height: 1.6;
+      line-width: 100%;
   }
   
 
