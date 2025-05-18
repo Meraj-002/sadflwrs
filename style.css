@@ -14,7 +14,6 @@ body {
 .name-animation {
     position: absolute;
     top: 10%;
-    left: 50%;
     transform: translateX(-50%);
     text-align: center;
     font-family: 'Ariel', cursive;
@@ -26,13 +25,14 @@ body {
   
   .name-animation .name-text {
     font-size: 6vw;
+      left: 50%;
   }
   
   .name-animation .shayari-text {
     font-size: 2.0vw;
     margin-top: 1em;
     line-height: 1.6;
-      left: 40%;
+      left: 30%;
   }
   
 
